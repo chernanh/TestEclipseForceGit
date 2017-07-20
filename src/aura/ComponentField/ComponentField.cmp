@@ -1,0 +1,26 @@
+<aura:component >
+  <aura:attribute name="fieldType" type="String" default="text"/>
+  <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+      <aura:if isTrue="{!v.fieldType =='text'}">
+          True
+      </aura:if> 
+      <aura:if isTrue="{!v.fieldType =='date'}">
+      	<ui:inputDate labelClass="slds-form-element__label" class="slds-input" label="Date Picker Label" displayDatePicker="true"/>
+      </aura:if> 
+      <aura:if isTrue="{!v.fieldType =='number'}">
+          number
+      </aura:if> 
+      <aura:if isTrue="{!v.fieldType =='lookup'}">
+          lookup
+      </aura:if> 
+      <aura:if isTrue="{!v.fieldType =='picklist'}">
+          picklist
+      </aura:if> 
+      <aura:if isTrue="{!v.fieldType =='multipicklist'}">
+          multipicklist
+      </aura:if> 
+      
+      
+  </div>
+
+</aura:component>

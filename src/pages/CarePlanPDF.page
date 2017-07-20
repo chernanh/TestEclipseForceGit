@@ -1,0 +1,7 @@
+<apex:page >
+  <!-- renderAs="pdf" -->
+    
+<a href="https://vrakmhare99-dev-ed.my.salesforce.com/soap/wsdl.jsp?type=*&ver_sf_chttr_apps=1.9&ver_sf_com_apps=1.6">wsdl</a>
+<a href="https://vrakmhare99-dev-ed.my.salesforce.com/soap/wsdl.jsp?type=*">wsdl</a>
+
+</apex:page>

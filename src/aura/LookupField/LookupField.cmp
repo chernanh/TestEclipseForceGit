@@ -1,0 +1,33 @@
+<aura:component extensible="true" controller="LookupController">
+	<aura:attribute name="placeholder" type="String" description=""/>
+    <aura:attribute name="sObject" type="String" description=""/>
+    <aura:attribute name="Fields" type="String[]" description=""/>
+    <aura:attribute name="result" type="sObject[]" description=""/>
+    <aura:attribute name="sObjectLower" type="String" description=""/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+  <div class="slds-form-element ">
+    <label class="slds-form-element__label" for="lookup">{!v.sObject}</label>
+    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+        <c:svg ariahidden="true" class="slds-input__icon" xlinkHref="/resource/SLDS092/assets/icons/utility-sprite/svg/symbols.svg#search" />
+      <div class="slds-pill-container slds-hide"></div>
+      <input aura:id="lookup" class="slds-input slds-show" type="text" aria-autocomplete="list" role="combobox" aria-expanded="false" aria-activedescendant="" placeholder="{!v.placeholder}" onfocus="{!c.handleFocus}" onblur="{!c.handleBlur}"/>
+    </div>
+  
+  <div class="slds-lookup__menu slds-hide" role="listbox" aura:id="listbox">
+    <ul class="slds-lookup__list" role="presentation">
+		<aura:iteration items="{!v.result}" var="row" indexVar="index">
+        <li class="slds-lookup__item">
+        <a id="{!row.Id}" href="#" role="option">
+            <c:svg ariaHidden="true" class="slds-icon  slds-icon--small" xlinkHref="{!'/resource/SLDS092/assets/icons/standard-sprite/svg/symbols.svg#'+v.sObjectLower}" />
+            {!row.Name}</a>
+      </li>
+            </aura:iteration>
+    </ul>
+    <div class="slds-lookup__item">
+      <button class="slds-button">
+          <c:svg ariaHidden="true" class="slds-icon slds-icon-text-default slds-icon--small" xlinkHref="{!'/resource/SLDS092/assets/icons/standard-sprite/svg/symbols.svg#'+v.sObjectLower}" />
+          Add {!v.sObject}</button>
+    </div>
+  </div>
+</div>
+</aura:component>

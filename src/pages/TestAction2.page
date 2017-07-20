@@ -1,0 +1,7 @@
+<apex:page standardController="Configuration__c" recordSetVar="Configuration__c">
+<apex:includeLightning />
+
+<div id="containerId"> </div>
+<p id="otroId"></p>
+
+</apex:page>

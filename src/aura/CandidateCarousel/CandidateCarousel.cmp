@@ -1,0 +1,15 @@
+<aura:component controller="CandidateController" implements="force:appHostable">
+
+    <ltng:require styles="/resource/carousel/slick/slick.css,/resource/carousel/slick/slick-theme.css"	
+                  scripts="/resource/carousel/jquery/jquery.js,/resource/carousel/slick/slick.min.js, /soap/ajax/34.0/connection.js"
+        afterScriptsLoaded="{!c.doInit}"/>
+    
+	<aura:attribute name="contacts" type="Contact[]"/>
+
+    <div class="carousel">
+		<aura:iteration items="{!v.contacts}" var="contact">
+            <c:CandidatePage contact="{!contact}"/>
+        </aura:iteration>
+	</div>
+    
+</aura:component>

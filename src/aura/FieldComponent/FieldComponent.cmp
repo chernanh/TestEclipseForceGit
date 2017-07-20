@@ -1,0 +1,33 @@
+<aura:component access="GLOBAL"  implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" >
+	<div class="slds-form">
+        <div class="slds-grid slds-wrap slds-grid--align-spread">
+            <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                <label class="slds-form-element__label" for="inputSample2">Text Input</label>
+                <div class="slds-form-element__control">
+                    <input id="inputSample2" class="slds-input" type="text" placeholder="Placeholder Text" />
+                </div>
+            </div>
+            <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                <ui:inputText labelClass="slds-form-element__label" class="slds-input" label="Text Input"/>
+            </div> 
+            
+            
+  <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+	<ui:inputDate labelClass="slds-form-element__label" class="slds-input" label="Date Picker Label" displayDatePicker="true" requiredIndicatorClass="test"/>
+  </div>
+  <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+      <c:LookupField placeholder="Search Account" sObject="Account" />
+  </div>
+  <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+      <c:LookupField placeholder="Search Contact" sObject="Contact" />
+  </div>
+
+
+            
+            
+       <!-- <force:recordEdit aura:id="a012400000AzKgu" recordId="a012400000AzKgu"/>-->
+     
+            
+        </div>
+    </div>
+</aura:component>

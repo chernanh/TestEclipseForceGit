@@ -1,0 +1,202 @@
+<aura:component implements="force:appHostable" controller="ContactSearchApexController">
+	  <div class="slds">
+
+    <!-- MASTHEAD -->
+    <!-- / MASTHEAD -->
+
+    <!-- PAGE HEADER -->
+              <div class="slds-page-header" role="banner">
+
+                    <!-- LAYOUT GRID-->
+                    <div class="slds-grid">
+
+                        <!-- GRID COL  -->
+                        <div class="slds-col slds-size--1-of-4 slds-medium-size--1-of-6 slds-large-size--2-of-12">
+                            <!-- HEADING AREA -->
+                            <!-- MEDIA OBJECT = FIGURE + BODY -->
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+
+
+                                </div>
+                                <div class="slds-media__body">
+
+                                    <h1 class="slds-text-heading--small">Care Plan</h1>
+
+                                    <p class="slds-text-heading--label" id="care-plan-patient-name">Mary Maddison 001</p>
+                                </div>
+                            </div>
+                            <!-- / MEDIA OBJECT -->
+                            <!-- /HEADING AREA -->
+
+                        </div>
+
+                        <!-- ACTION BUTTONS -->
+                        <div class="slds-col slds-no-flex slds-align-middle">
+                            <div class="slds-button-group" role="group">
+                                <button class="slds-button slds-button--neutral" id="trigger">
+                                    Help
+                                </button>
+
+                            </div>
+                        </div>
+                        <!-- / ACTION BUTTONS -->
+
+
+                    </div>
+                    <!-- / LAYOUT GRID -->
+
+                    <!-- PAGE HEADER DETAIL ROW -->
+						<!-- PROGRESS BAR -->
+                  		<div class="slds-col slds-col-rule--right slds-p-right--large ">
+                            <div class="slds-tabs--default">
+                                <ul class="slds-tabs--default__nav" role="tablist" id="progressbar">
+                                    <li class="slds-tabs__item slds-text-heading--label .slds-tabs--default" title="1" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-1">1</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="2" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2">2</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="3" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3">3</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="4" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-4">4</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="5" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-5">5</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="6" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-6">6</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="7" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-7">7</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="8" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-8">8</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="9" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-9">9</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label " title="10" role="presentation">
+                                        <a href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-10">10</a>
+                                    </li>
+                                </ul>
+                            </div>
+                      </div>
+                            <!-- / PROGRESS BAR -->
+
+                    <!-- / PAGE HEADER DETAIL ROW -->
+
+
+
+                </div>
+    <!-- / PAGE HEADER -->
+
+    <!-- PRIMARY CONTENT WRAPPER -->
+    <!-- PRIMARY CONTENT WRAPPER -->
+
+<div class="myapp">
+  <!-- RELATED LIST CARDS-->
+  <div class="slds-grid slds-m-top--large">
+
+     <!-- MAIN CARD -->
+
+
+
+
+     <div class="slds-col slds-col-rule--right slds-p-right--large slds-size--8-of-12">
+
+
+                <div id="tab-default-2" class="slds-tabs__content slds-hide" role="tabpanel">
+                    <div class="slds-form">
+                    <div class="slds-grid slds-wrap slds-grid--align-spread">
+                      <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                        <label class="slds-form-element__label" for="inputSample2">Text Input</label>
+                        <div class="slds-form-element__control">
+                          <input id="inputSample2" class="slds-input" type="text" placeholder="Placeholder Text" />
+                        </div>
+                      </div>
+                      <div class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                        <label class="slds-form-element__label" for="textareaSample2">Textarea Label</label>
+                        <div class="slds-form-element__control">
+                          <textarea id="textareaSample2" class="slds-textarea"></textarea>
+                        </div>
+                      </div>
+                      <fieldset class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                        <span class="slds-form-element__label slds-form-element__label--top">
+                          <legend>Checkbox label</legend>
+                        </span>
+                        <div class="slds-form-element__control ">
+                          <label class="slds-checkbox" for="opportunities-ownership">
+                            <input name="default" type="checkbox" id="opportunities-ownership" />
+                            <span class="slds-checkbox--faux"></span>
+                            <span class="slds-form-element__label">All opportunities owned by you</span>
+                          </label>
+                          <label class="slds-checkbox" for="contact-ownership">
+                            <input name="default" type="checkbox" id="contact-ownership" />
+                            <span class="slds-checkbox--faux"></span>
+                            <span class="slds-form-element__label">All contacts in the account owned by you</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="slds-form-element slds-col--padded-medium slds-size--1-of-2">
+                        <span class="slds-form-element__label slds-form-element__label--top">
+                          <legend>Radio label</legend>
+                        </span>
+                        <div class="slds-form-element__control ">
+                          <label class="slds-radio" for="lead">
+                            <input type="radio" name="options" id="lead" />
+                            <span class="slds-radio--faux"></span>
+                            <span class="slds-form-element__label">Lead Generation</span>
+                          </label>
+                          <label class="slds-radio" for="education">
+                            <input type="radio" name="options" id="education" />
+                            <span class="slds-radio--faux"></span>
+                            <span class="slds-form-element__label">Education Leads</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                </div>
+                </div>
+
+                <div id="tab-default-3" class="slds-tabs__content slds-hide" role="tabpanel">
+                    <h2>Item Three Content</h2>
+                </div>
+      </div>
+
+
+     <!-- / MAIN CARD -->
+
+    <!-- COMPACT CARD -->
+
+
+
+    <div class="slds-col  slds-size--4-of-12" id="slider">
+    </div>
+	<!-- / COMPACT CARD -->
+
+  </div>
+  <!-- / RELATED LIST CARDS -->
+
+</div>
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+    <!-- / PRIMARY CONTENT WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" class="slds-p-around--large">
+      <!-- LAYOUT GRID -->
+      <div class="slds-grid slds-grid--align-spread">
+        <p class="slds-col"></p>
+        <p class="slds-col">&copy; ehCOS</p>
+      </div>
+      <!-- / LAYOUT GRID -->
+    </footer>
+    <!-- / FOOTER -->
+
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</aura:component>

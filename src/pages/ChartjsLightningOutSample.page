@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+<apex:includeLightning />
+<html>
+<head>
+	
+</head>
+<body>
+<div id="containerId"></div>
+    
+</body>
+    
+</html>
+</apex:page>

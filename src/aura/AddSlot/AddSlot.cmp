@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable">
+    <aura:attribute name="event" type="String" default="0012400000EyFOL" />
+    <force:recordEdit aura:id="edit" recordId="0012400000EyFOL"/>
+	<ui:button label="Related " press="{!c.gotoRelatedList}" />
+
+</aura:component>

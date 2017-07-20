@@ -1,0 +1,5 @@
+<apex:page standardController="Configuration__c">
+    <apex:form >
+        <apex:inputField value="{!Configuration__c.Setup__c}"/>
+    </apex:form>
+</apex:page>

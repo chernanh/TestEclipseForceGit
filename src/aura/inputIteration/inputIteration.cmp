@@ -1,0 +1,62 @@
+<aura:component >
+    <aura:attribute name="inputList" type="Integer[]" default="[1,2,3,4,5,6]"/>
+    <aura:attribute name="checkSize" type="Object"/>
+    
+    <ui:inputDate aura:id="dateField" label="Birthday" value="2014-01-30" displayDatePicker="true" labelClass="date"/>
+    <ui:inputSelect multiple="false" label="Select" labelClass="labelSel" class="inputSel">
+    <ui:inputSelectOption text="All Primary" label="All Contacts" value="true"/>
+    <ui:inputSelectOption text="All Primary" label="All Primary"/>
+    <ui:inputSelectOption text="All Secondary" label="All Secondary"/>
+</ui:inputSelect>
+    <ui:button label="Add" press="{!c.DivMethod}"/>
+    <div aura:id="div">
+    
+        <input list="browsers" name="browser"/>
+ <datalist id="browsers">
+     <option value="Internet Explorer"/>
+     <option value="Firefox"/>
+     <option value="Chrome"/>
+     <option value="Opera"/>
+     <option value="Safari"/>
+</datalist></div>
+    
+    
+    <table onresize="{!c.checkResize}" width="100%">
+        <tr>
+            <aura:iteration items="{!v.inputList}" var="v">
+                <td class="slds-truncate" id="{!v + 'Id'}">
+                    <ui:inputText class="slds-input comAmount" value="{!v}" aura:id="inputId" label="{!v + 'Id'}"/>
+                    <div data-id="{!v + 'Id'}" onclick="{!c.fireAppEvent}">
+                    <a href="#" data-id="{!v + 'Id'}"  style="text-decoration:none;">
+                    <div >
+                    <li class="slds-list__item">
+                        <div class="slds-media slds-tile">
+                            <div class="slds-media__figure">
+                                
+                            </div>
+
+                            <div class="slds-media__body ">
+                                <p class="slds-tile__title slds-truncate">
+                                    Name
+                                </p>
+                                <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                                    <li class="slds-truncate slds-list__item">From : From</li>
+                                    <li class="slds-truncate slds-list__item">To : Number</li>
+                                </ul>
+
+                                <div >
+                                    <p class="slds-truncate">MsgText</p>
+                                    <p>Received at 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                    </a>
+                        </div>
+                </td>
+            </aura:iteration>
+            
+        </tr>
+    </table>
+</aura:component>
